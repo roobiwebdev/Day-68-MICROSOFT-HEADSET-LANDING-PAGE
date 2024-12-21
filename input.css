@@ -1,0 +1,74 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  @apply hidden;
+}
+
+body {
+  @apply overflow-x-hidden;
+}
+
+.nav-links {
+  @apply duration-300;
+}
+
+.nav-links:hover {
+  @apply text-[#DB7642] cursor-pointer;
+  /* background-color: #d4d4d4; */
+}
+
+.glass {
+  background: rgba(219, 118, 66, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+p {
+  @apply text-gray-700 leading-6 font-normal;
+}
+
+@layer utilities {
+  .loader {
+    width: 60px;
+    aspect-ratio: 2;
+    --_g: no-repeat radial-gradient(circle closest-side, #db7642 90%, #ffffff00);
+    background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+    background-size: calc(100% / 3) 50%;
+    animation: l3 1s infinite linear;
+  }
+  @keyframes l3 {
+    20% {
+      background-position: 0% 0%, 50% 50%, 100% 50%;
+    }
+    40% {
+      background-position: 0% 100%, 50% 0%, 100% 50%;
+    }
+    60% {
+      background-position: 0% 50%, 50% 100%, 100% 0%;
+    }
+    80% {
+      background-position: 0% 50%, 50% 50%, 100% 100%;
+    }
+  }
+}
+
+.btn {
+  @apply mt-5 py-3 px-10 cursor-pointer font-semibold text-white bg-[#DB7642] shadow-2xl shadow-[#DB7642] duration-300 hover:-translate-y-3;
+}
+
+img {
+  @apply cursor-pointer;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply text-black;
+}
