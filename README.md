@@ -19,7 +19,7 @@ Check it out
 [Live Link](https://roobiwebdev.github.io/Day-68-MICROSOFT-HEADSET-LANDING-PAGE/)
 
 
+![HeadSet Selling](https://github.com/user-attachments/assets/6092022d-dd28-4c1d-b00c-76e13f0d163b)
 
-![Uploading HeadSet Selling.png…]()
 
 #100DaysChallenge #coding #projects@DevNerd0
